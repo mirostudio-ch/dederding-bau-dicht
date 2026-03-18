@@ -49,6 +49,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
@@ -1599,3 +1600,5 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
   }
 }
+@ m e d i a   ( m a x - w i d t h :   7 6 8 p x )   {   . h e r o - b g ,   . h e r o - i n n e r   . h e r o - b g   {   o b j e c t - p o s i t i o n :   8 0 %   c e n t e r   ! i m p o r t a n t ;   }   }  
+ 
