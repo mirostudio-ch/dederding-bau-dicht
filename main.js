@@ -192,4 +192,58 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // --- FAQ Accordion ---
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    if (question) {
+      question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        // Close all other FAQ items
+        faqItems.forEach(other => other.classList.remove('active'));
+        // Toggle current
+        if (!isActive) {
+          item.classList.add('active');
+          question.setAttribute('aria-expanded', 'true');
+        } else {
+          question.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      question.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          question.click();
+        }
+      });
+    }
+  });
+
+  // --- Nav Dropdown Click Toggle ---
+  const navDropdowns = document.querySelectorAll('.nav-dropdown');
+  navDropdowns.forEach(dropdown => {
+    const toggle = dropdown.querySelector(':scope > a');
+    if (toggle) {
+      toggle.addEventListener('click', (e) => {
+        const menu = dropdown.querySelector('.nav-dropdown-menu');
+        if (menu) {
+          e.preventDefault();
+          const isOpen = dropdown.classList.contains('open');
+          // Close all other dropdowns
+          navDropdowns.forEach(d => d.classList.remove('open'));
+          if (!isOpen) {
+            dropdown.classList.add('open');
+          }
+        }
+      });
+    }
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav-dropdown')) {
+      navDropdowns.forEach(d => d.classList.remove('open'));
+    }
+  });
 });

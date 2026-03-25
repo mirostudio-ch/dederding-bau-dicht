@@ -32,10 +32,22 @@
       </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html" class="active">Startseite</a></li>
-        <li><a href="#leistungen">Leistungen</a></li>
+        <li class="nav-dropdown">
+          <a href="#leistungen">Leistungen
+            <svg class="dropdown-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z" fill="currentColor"/></svg>
+          </a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="abdichtung.html">Bauwerksabdichtung</a></li>
+            <li><a href="fugen.html">Fugen erneuern</a></li>
+            <li><a href="dusche.html">Dusche abdichten</a></li>
+            <li><a href="plattenleger.html">Plattenleger</a></li>
+            <li><a href="bodenbelaege.html">Bodenbeläge</a></li>
+            <li><a href="plattenbelaege.html">Plattenbeläge</a></li>
+          </ul>
+        </li>
         <li><a href="#ueber-uns">Über uns</a></li>
         <li><a href="#bewertungen">Bewertungen</a></li>
-        <li><a href="#kontakt" class="nav-contact-btn">Kontakt</a></li>
+        <li><a href="kontakt.html" class="nav-contact-btn">Kontakt</a></li>
       </ul>
       <div class="hamburger" id="hamburger">
         <span></span>
@@ -134,7 +146,7 @@
           <div class="service-card-body">
             <h3>Bauwerks­abdichtung</h3>
             <p>Professionelle Abdichtungen im Innen- und Aussenbereich. Wir schützen Bauwerke nachhaltig vor Feuchtigkeit, Rissinjektionen und Wasserschäden.</p>
-            <a href="#kontakt" class="card-link">
+            <a href="abdichtung.html" class="card-link">
               Mehr erfahren
               <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
@@ -149,7 +161,7 @@
           <div class="service-card-body">
             <h3>Fugen erneuern</h3>
             <p>Silikonfugen, Zementfugen und Hybridfugen fachgerecht erneuern. Wir beseitigen Schimmel und sorgen für ein dauerhaft sauberes Fugenbild.</p>
-            <a href="#kontakt" class="card-link">
+            <a href="fugen.html" class="card-link">
               Mehr erfahren
               <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
@@ -164,7 +176,7 @@
           <div class="service-card-body">
             <h3>Dusche abdichten</h3>
             <p>Undichte Duschen und Badezimmer fachgerecht abdichten. Oft ohne komplette Badsanierung – präzise, sauber und schnell einsatzbereit.</p>
-            <a href="#kontakt" class="card-link">
+            <a href="dusche.html" class="card-link">
               Mehr erfahren
               <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
@@ -179,7 +191,37 @@
           <div class="service-card-body">
             <h3>Plattenbeläge</h3>
             <p>Keramische Wand- und Bodenplatten für Bad, Küche und Wohnbereich. Fachgerechte Verlegung bei Neubau und Renovation.</p>
-            <a href="#kontakt" class="card-link">
+            <a href="plattenleger.html" class="card-link">
+              Mehr erfahren
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 5: Bodenbeläge -->
+        <div class="service-card">
+          <div class="service-card-image">
+            <img src="images/bodenbelaege.png" alt="Bodenbeläge verlegen">
+          </div>
+          <div class="service-card-body">
+            <h3>Bodenbeläge</h3>
+            <p>Parkett, Vinyl, Laminat und Designbeläge professionell verlegt – für Wohnräume, Büros und Gewerbe.</p>
+            <a href="bodenbelaege.html" class="card-link">
+              Mehr erfahren
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 6: Plattenbeläge -->
+        <div class="service-card">
+          <div class="service-card-image">
+            <img src="images/plattenbelaege.png" alt="Plattenbeläge verlegen">
+          </div>
+          <div class="service-card-body">
+            <h3>Plattenbeläge</h3>
+            <p>Keramik, Feinsteinzeug, Naturstein und Mosaik – fachgerechte Verlegung für Bad, Küche und Aussenbereiche.</p>
+            <a href="plattenbelaege.html" class="card-link">
               Mehr erfahren
               <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
@@ -499,7 +541,9 @@
                 <option value="abdichtung">Bauwerksabdichtung</option>
                 <option value="fugen">Fugen erneuern</option>
                 <option value="dusche">Dusche abdichten</option>
-                <option value="platten">Plattenbeläge</option>
+                <option value="platten">Plattenleger</option>
+                <option value="bodenbelaege">Bodenbeläge (Parkett/Vinyl/Laminat)</option>
+                <option value="plattenbelaege">Plattenbeläge</option>
                 <option value="sonstiges">Sonstiges</option>
               </select>
             </div>
@@ -553,19 +597,23 @@
         <div>
           <h4>Leistungen</h4>
           <ul class="footer-links">
-            <li><a href="#leistungen">Bauwerks­abdichtung</a></li>
-            <li><a href="#leistungen">Fugen erneuern</a></li>
-            <li><a href="#leistungen">Dusche abdichten</a></li>
-            <li><a href="#leistungen">Plattenbeläge</a></li>
+            <li><a href="abdichtung.html">Bauwerks­abdichtung</a></li>
+            <li><a href="fugen.html">Fugen erneuern</a></li>
+            <li><a href="dusche.html">Dusche abdichten</a></li>
+            <li><a href="plattenleger.html">Plattenleger</a></li>
+            <li><a href="bodenbelaege.html">Bodenbeläge</a></li>
+            <li><a href="plattenbelaege.html">Plattenbeläge</a></li>
           </ul>
         </div>
         <div>
           <h4>Navigation</h4>
           <ul class="footer-links">
-            <li><a href="#hero">Startseite</a></li>
+            <li><a href="index.html">Startseite</a></li>
             <li><a href="#ueber-uns">Über uns</a></li>
             <li><a href="#bewertungen">Bewertungen</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
           </ul>
         </div>
         <div>
@@ -585,7 +633,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        &copy; 2025 Dederding Bau &amp; Dicht. Alle Rechte vorbehalten.
+        &copy; 2025 Dederding Bau &amp; Dicht. Alle Rechte vorbehalten. · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>
       </div>
     </div>
   </footer>
